@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Brew Haven Coffee Shop</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">☕ Brew Haven</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+
+            <button id="darkModeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" style="height:45vh;">
+
+    <div class="hero-content">
+
+        <h1>Our Menu</h1>
+
+        <p>Freshly Brewed Coffee & Delicious Snacks</p>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="menu">
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="search"
+        placeholder="Search coffee...">
+
+    </div>
+
+<!-- ================= FILTER ================= -->
+
+<div class="filter-buttons">
+
+<button class="filter-btn active" data-filter="all">All</button>
+
+<button class="filter-btn" data-filter="hot">
+Hot Coffee
+</button>
+
+<button class="filter-btn" data-filter="cold">
+Cold Coffee
+</button>
+
+<button class="filter-btn" data-filter="tea">
+Tea
+</button>
+
+<button class="filter-btn" data-filter="dessert">
+Desserts
+</button>
+
+<button class="filter-btn" data-filter="snack">
+Snacks
+</button>
+
+</div>
+
+<!-- ================= MENU ITEMS ================= -->
+
+<div class="menu-grid">
+
+<!-- Espresso -->
+
+<div class="menu-card" data-category="hot">
+
+<img src="images/Coffee1.jpg" alt="Espresso">
+
+<div class="menu-card-content">
+
+<h3>Espresso</h3>
+
+<p>Strong Italian espresso.</p>
+
+<div class="price">₹180</div>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- Cappuccino -->
+
+<div class="menu-card" data-category="hot">
+
+<img src="images/Coffee2.jpg">
+
+<div class="menu-card-content">
+
+<h3>Cappuccino</h3>
+
+<p>Rich coffee with milk foam.</p>
+
+<div class="price">₹220</div>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- Latte -->
+
+<div class="menu-card" data-category="hot">
+
+<img src="images/Coffee3.jpg">
+
+<div class="menu-card-content">
+
+<h3>Latte</h3>
+
+<p>Espresso with steamed milk.</p>
+
+<div class="price">₹250</div>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- Cold Coffee -->
+
+<div class="menu-card" data-category="cold">
+
+<img src="images/coldcoffee.jpg">
+
+<div class="menu-card-content">
+
+<h3>Cold Coffee</h3>
+
+<p>Refreshing chilled coffee.</p>
+
+<div class="price">₹210</div>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- Iced Latte -->
+
+<div class="menu-card" data-category="cold">
+
+<img src="images/icedlatte.jpg">
+
+<div class="menu-card-content">
+
+<h3>Iced Latte</h3>
+
+<p>Cold espresso with milk.</p>
+
+<div class="price">₹240</div>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- Tea -->
+
+<div class="menu-card" data-category="tea">
+
+<img src="images/tea.jpg">
+
+<div class="menu-card-content">
+
+<h3>Green Tea</h3>
+
+<p>Organic herbal tea.</p>
+
+<div class="price">₹120</div>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- Brownie -->
+
+<div class="menu-card" data-category="dessert">
+
+<img src="images/brownie.jpg">
+
+<div class="menu-card-content">
+
+<h3>Chocolate Brownie</h3>
+
+<p>Soft & delicious brownie.</p>
+
+<div class="price">₹180</div>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- Cheesecake -->
+
+<div class="menu-card" data-category="dessert">
+
+<img src="images/cheesecake.jpg">
+
+<div class="menu-card-content">
+
+<h3>Cheesecake</h3>
+
+<p>Fresh creamy cheesecake.</p>
+
+<div class="price">₹220</div>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- Sandwich -->
+
+<div class="menu-card" data-category="snack">
+
+<img src="images/sandwich.jpg">
+
+<div class="menu-card-content">
+
+<h3>Veg Sandwich</h3>
+
+<p>Grilled sandwich with cheese.</p>
+
+<div class="price">₹150</div>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- Burger -->
+
+<div class="menu-card" data-category="snack">
+
+<img src="images/burger.jpg">
+
+<div class="menu-card-content">
+
+<h3>Veg Burger</h3>
+
+<p>Loaded with veggies & cheese.</p>
+
+<div class="price">₹170</div>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+
+<h3>Brew Haven</h3>
+
+<p>Serving premium coffee since 2015.</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="gallery.html">Gallery</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p><i class="fa-solid fa-location-dot"></i> Mumbai</p>
+
+<p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+
+<p><i class="fa-solid fa-envelope"></i> info@brewhaven.com</p>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+</div>
+
+<hr>
+
+<p style="text-align:center;">
+© 2026 Brew Haven Coffee Shop | All Rights Reserved
+</p>
+
+</footer>
+
+<button id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- ================= CART SIDEBAR ================= -->
+
+<div id="cartSidebar" class="cart-sidebar">
+
+    <div class="cart-header">
+        <h2>My Cart</h2>
+        <span id="closeCart">&times;</span>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+        <button id="clearCart">Clear Cart</button>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

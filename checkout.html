@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Brew Haven</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="checkout">
+
+    <h1>Checkout</h1>
+
+    <h2>Your Order</h2>
+
+    <div id="orderList"></div>
+
+    <h3 id="totalPrice">Total: ₹0</h3>
+
+    <form id="checkoutForm">
+
+        <input
+            type="text"
+            placeholder="Full Name"
+            required>
+
+        <input
+            type="tel"
+            placeholder="Phone Number"
+            required>
+
+        <textarea
+            placeholder="Delivery Address"
+            required></textarea>
+
+        <button type="submit">
+            Place Order
+        </button>
+
+    </form>
+
+</section>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

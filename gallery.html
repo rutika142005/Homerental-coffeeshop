@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Brew Haven Coffee Shop</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">☕ Brew Haven</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+
+            <button id="darkModeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" style="height:45vh;">
+
+    <div class="hero-content">
+        <h1>Gallery</h1>
+        <p>Explore Our Coffee, Café & Delicious Treats</p>
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery">
+
+    <h2>Our Gallery</h2>
+
+    <div class="gallery-grid">
+
+        <img src="images/gal1.jpg" alt="Coffee">
+        <img src="images/gal2.jpg" alt="Latte Art">
+        <img src="images/gal3.jpg" alt="Dessert">
+        <img src="images/gal4.jpg" alt="Cafe Interior">
+        <img src="images/gal5.jpg" alt="Coffee Beans">
+        <img src="images/gal6.jpg" alt="Cold Coffee">
+        <img src="images/gal7.jpg" alt="Customer">
+        <img src="images/gal8.jpg" alt="Pastries">
+        <img src="images/gal9.jpg" alt="Coffee Cup">
+        <img src="images/gal10.jpg" alt="Sandwich">
+        <img src="images/gal11.jpg" alt="Barista">
+        <img src="images/gal12.jpg" alt="Cafe Atmosphere">
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="newsletter">
+
+    <h2>Visit Brew Haven Today!</h2>
+
+    <p>
+        Enjoy handcrafted coffee, delicious desserts,
+        and a cozy atmosphere with your friends and family.
+    </p>
+
+    <a href="contact.html" class="btn">
+        Reserve a Table
+    </a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+
+<h3>Brew Haven</h3>
+
+<p>Serving premium coffee since 2015.</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p><i class="fa-solid fa-location-dot"></i> Mumbai, India</p>
+
+<p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+
+<p><i class="fa-solid fa-envelope"></i> info@brewhaven.com</p>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+</div>
+
+<hr>
+
+<p style="text-align:center;">
+© 2026 Brew Haven Coffee Shop | All Rights Reserved
+</p>
+
+</footer>
+
+<!-- Scroll to Top -->
+
+<button id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- ================= CART SIDEBAR ================= -->
+
+<div id="cartSidebar" class="cart-sidebar">
+
+    <div class="cart-header">
+        <h2>My Cart</h2>
+        <span id="closeCart">&times;</span>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+        <button id="clearCart">Clear Cart</button>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
